@@ -45,8 +45,8 @@ const LogIn = () => {
       {/* <h2>Login Form</h2> */}
 
       <form onSubmit={handleFormSubmit}>
-        <div className="imgcontainer">
-          <img src="img/avatar.png" alt="Avatar" className="avatar" />
+        <div className="">
+          <h1>{"TM LogIn"}</h1>
         </div>
 
         <div className="container">
@@ -55,7 +55,6 @@ const LogIn = () => {
           </label>
           <input
             onChange={handleLogInFormChanges}
-            // value={logInValue.email}
             type="email"
             placeholder="Enter Email"
             name="email"
@@ -67,7 +66,6 @@ const LogIn = () => {
           </label>
           <input
             onChange={handleLogInFormChanges}
-            // value={logInValue.password}
             type="password"
             placeholder="Enter Password"
             name="password"
@@ -75,22 +73,21 @@ const LogIn = () => {
           />
 
           <button type="submit">LogIn</button>
-          {/* TODO::Work later */}
-          {/* <label>
-            <input type="checkbox" checked="checked" name="remember" /> Remember
+
+          <label>
+            <input type="checkbox" name="remember" /> Remember
             me
-          </label> */}
+          </label>
         </div>
 
-        {/* TODO::Work later */}
-        {/* <div className="container" style={{ backgroundColor: "#f1f1f1" }}>
-          <button type="button" className="cancelbtn">
+        <div className="container">
+          <button type="button" className="">
             Cancel
           </button>
-          <span className="psw">
+          <span className="">
             Forgot <a href="#">password?</a>
           </span>
-        </div> */}
+        </div>
       </form>
     </div>
   );

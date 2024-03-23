@@ -1,9 +1,10 @@
 import "./App.css";
+import Routing from "./Router/Routing";
 
 function App() {
   return (
     <>
-      <h1>Tasklist Management</h1>
+      <Routing />
     </>
   );
 }
