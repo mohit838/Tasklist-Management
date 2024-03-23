@@ -58,13 +58,9 @@ app.use(limiter);
 app.use(mongoSanitize()); // Prevent NoSQL injection
 
 // All Routers of this project
-import medicineRouters from "./routes/medicine.routers.js";
-import patientRouters from "./routes/patient.routers.js";
 import userRouters from "./routes/user.routers.js";
 
 app.use("/api/v1/users", userRouters);
-app.use("/api/v1/patient", patientRouters);
-app.use("/api/v1/medicine", medicineRouters);
 
 // MongoDB and Server Setups
 const SERVER_PORT = PORT || 9090;
